@@ -7,7 +7,7 @@ st.header('Ventas de Vehículos')
 
 st.write('Esta aplicación aún no es funcional. En construcción.')
 
-ruta_archivo =  "vehicles_us.csv"       
+ruta_archivo =   "vehicles_us.csv"       
 car_data = pd.read_csv(ruta_archivo)
 hist_button = st.button('Construir histograma') # crear un botón
 scatter_button = st.button("Construir gráfico de dispersión") 
