@@ -6,8 +6,9 @@ import streamlit as st
 st.header('Ventas de Vehículos')
 
 st.write('Esta aplicación aún no es funcional. En construcción.')
-        
-car_data = pd.read_csv("/docs/Curso Data Analisis/entorno/vehicles_us.csv") # leer los datos
+
+ruta_archivo =  "/docs/Curso Data Analisis/entorno/vehicles_us.csv"       
+car_data = pd.read_csv(ruta_archivo)
 hist_button = st.button('Construir histograma') # crear un botón
 scatter_button = st.button("Construir gráfico de dispersión") 
       
