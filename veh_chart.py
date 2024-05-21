@@ -1,6 +1,11 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+
+
+st.header('Ventas de Vehículos')
+
+st.write('Esta aplicación aún no es funcional. En construcción.')
         
 car_data = pd.read_csv("/docs/Curso Data Analisis/entorno/vehicles_us.csv") # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón
@@ -22,11 +27,4 @@ if scatter_button: # al hacer click en el botón
                     # crear un gráfico de dispersión
     fig = px.scatter(car_data, x= "odometer")
                     # mostrar un gráfico Plotly interactivo
-    st.plotly_chart(fig,)                
-    
-    
-import streamlit as st
-
-st.header('Ventas de Vehículos')
-
-st.write('Esta aplicación aún no es funcional. En construcción.')
+    st.plotly_chart(fig,)              
